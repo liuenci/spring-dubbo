@@ -9,5 +9,5 @@
 
 
     <!-- 生成远程服务代理，可以和本地bean一样使用demoService -->
-    <dubbo:reference id="consumer" interface="com.liuencier.dubbo.ServiceAPI"/>
+    <dubbo:reference id="consumer" interface="com.liuencier.dubbo.ServiceAPI" url="dubbo://localhost:20880"/>
 </beans>
