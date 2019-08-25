@@ -7,7 +7,7 @@ import java.io.IOException;
 public class ProviderClient {
 
     public static void main(String[] args) {
-        ClassPathXmlApplicationContext context = new ClassPathXmlApplicationContext("applicationContext-hello.provider.xml");
+        ClassPathXmlApplicationContext context = new ClassPathXmlApplicationContext("applicationContext-hello-provider.xml");
         context.start();
         try {
             System.in.read();

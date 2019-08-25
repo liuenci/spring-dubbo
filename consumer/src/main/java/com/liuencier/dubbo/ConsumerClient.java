@@ -8,7 +8,7 @@ import java.util.Scanner;
 public class ConsumerClient {
 
     public static void main(String[] args) throws IOException {
-        ClassPathXmlApplicationContext context = new ClassPathXmlApplicationContext("applicationContext-hello.consumer.xml");
+        ClassPathXmlApplicationContext context = new ClassPathXmlApplicationContext("applicationContext-hello-consumer.xml");
         context.start();;
         while (true) {
             Scanner scanner = new Scanner(System.in);
