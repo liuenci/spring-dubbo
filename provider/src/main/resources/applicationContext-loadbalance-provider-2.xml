@@ -23,7 +23,7 @@
     <bean id="quickStartService" class="com.liuencier.dubbo.quickstart.QuickStartServiceImpl"/>
 
     <!-- 声明需要暴露的服务接口 -->
-    <dubbo:service interface="com.liuencier.dubbo.ServiceAPI" ref="quickStartService"/>
+    <dubbo:service interface="com.liuencier.dubbo.ServiceAPI" ref="quickStartService" loadbalance="roundrobin"/>
 
 
 </beans>
